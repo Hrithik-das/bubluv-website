@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+.scrolling-tab{
+    width: 100vw;
+}
+
 .scroll{
     display: inline-block;
     white-space: nowrap;
@@ -23,6 +27,10 @@
 .logo img{
     padding: 0 24px;
     margin-top: 18px;
+}
+
+.openMenu{
+    display: none;
 }
 
 li{
@@ -63,6 +71,37 @@ a{
     margin: 5px;
     padding: 0px;
     white-space: nowrap;
+}
+
+@media only screen and (max-width:1062px) {
+    .nav-menu{
+        display: none;
+    }
+
+    .logo{
+        position: relative;
+    }
+
+    .logo img{
+        display: flex;
+        position: absolute;
+        left: 15rem;
+    }
+
+    .openMenu{
+        display: flex;
+        align-items: center;
+        font-size: 25px;
+        cursor: pointer;
+    }
+
+    .right-ul li{
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
+    
 }
 
 
